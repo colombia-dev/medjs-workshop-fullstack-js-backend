@@ -5,15 +5,17 @@
 const express = require('express');
 const http = require('http');
 
-// New line
 const expressConfig = require('./config/express');
+// New line
+const routeConfig = require('./routes');
 
 // Setup server
 const app = express();
 const server = http.createServer(app);
 
-// New line
 expressConfig(app);
+// New line
+routeConfig(app);
 
 const config = {
   port: 8080,
