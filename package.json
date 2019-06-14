@@ -1,0 +1,31 @@
+{
+  "name": "medjs-workshop-fullstack-js-backend",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene el código fuente del taller de MedellinJS sobre cómo crear un carrito de compras con NodeJS / Express / MongoDB",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colombia-dev/medjs-workshop-fullstack-js-backend.git"
+  },
+  "author": "MedellinJS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colombia-dev/medjs-workshop-fullstack-js-backend/issues"
+  },
+  "homepage": "https://github.com/colombia-dev/medjs-workshop-fullstack-js-backend#readme"
+}
