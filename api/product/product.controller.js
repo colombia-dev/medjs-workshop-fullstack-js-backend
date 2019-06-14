@@ -36,8 +36,8 @@ function handleError(res, code) {
 // Gets a list of products
 function index(req, res) {
   return Product.find().exec()
-    .then(data => res.status(500).json(data))
-    .catch(() => res.status(404).end());
+    .then(respondWithResult(res))
+    .catch(handleError(res));
 }
 
 // Create product
@@ -50,8 +50,6 @@ function create(req, res) {
 // Gets a single product from the DB
 function show(req, res) {
   return Product.findById(req.params.id).exec()
-    .then(res.status(500).json(res))
-    .catch(res.status(404).end())
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
