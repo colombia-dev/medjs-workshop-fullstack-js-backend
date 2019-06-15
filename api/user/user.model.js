@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /**
  * user model
  */
