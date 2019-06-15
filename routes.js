@@ -6,12 +6,15 @@
 // Import Endpoints
 const helloWorld = require('./api/helloworld');
 const product = require('./api/product');
-// New line
 const user = require('./api/user');
+// New line
+const auth = require('./auth');
 
 module.exports = (app) => {
   app.use('/api/helloworld', helloWorld);
   app.use('/api/products', product);
-  // New line
   app.use('/api/users', user);
+
+  // New line
+  app.use('/auth', auth);
 };

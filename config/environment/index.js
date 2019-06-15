@@ -22,7 +22,7 @@ const all = {
 
   // MongoDB connection options
   mongo: {
-    uri: process.env.MONGODB_URI || 'mongodb+srv://<username>:<password>@cluster0-ddb2f.mongodb.net/<database>?retryWrites=true&w=majority',
+    uri: process.env.MONGODB_URI || 'mongodb://<username>:<password>@cluster0-shard-00-00-9bgzf.mongodb.net:27017,cluster0-shard-00-01-9bgzf.mongodb.net:27017,cluster0-shard-00-02-9bgzf.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority',
     db: 'workshop-fullstack-js',
   },
 };
